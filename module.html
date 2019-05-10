@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <script src="./scripts/first_script.js"></script>
+    <link rel="stylesheet" href="styles/module.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header_left_item">
+                <a href="#"> <img src="img/logo.svg">  </a>
+            </div>
+            <div class="header_right_item">
+                <div class="header_text">Главная</div>
+                <div class="header_text">Материалы для вас</div>
+                <div class="header_text">Календарь курсов</div>
+                <div class="header_text"><img src="img/usericon.svg">Войти</div>
+            </div>
+        </header>
+    </div>
+
+
+    <div class="screen1">
+            <div class="container">
+                <div class="screen1_content">
+                    <div class="screen1_h1">1 год, 3-й месяц</div>
+                        <div class="info_text">Прохождение этой темы позволит вам избежать частных ошибок  при воспитании детей от 0 до 3 лет. Результат - правильные и четкие шаги для достижения цели.
+                        </div>
+                    <div class="screen1_themes_counter">
+                        <div class="themes_counter_string">
+                            <div class="themes_counter_percent"></div>
+                        </div>
+                    <div class="themes_total_info">
+                        <div class="total_info_nubmer">10</div>
+                        <div class="total_info_text">Тем всего</div>
+                        <div class="total_info_nubmer">6</div>
+                        <div class="total_info_text">Тем выполнено</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="screen2">
+                <div class="container">
+                        <div class="screen2_text">Главная</div>
+                        <div class="screen2_dash"></div>
+                        <div class="screen2_text">Курсы</div>
+                        <div class="screen2_dash"></div>
+                        <div class="screen2_text">Состав курса</div>
+                </div>
+            </div>
+
+        <div class="screen3">
+            <div class="container">
+                <label class="link" for="hider" id="clickme">
+                    <div class="module_tasks">
+                        <div class="tasks_header">
+                            <div class="tasks_header_row1"></div>
+                            Задачи модуля
+                            <div class="tasks_header_row2"></div>
+                            <div class="triangle"></div>
+                        </div>
+                    </div>
+                </label>
+
+                <input type="checkbox" id="hider">
+
+                <div class="screen3_content">
+                    <div class="content_item">
+                        <div class="item_nubmer">1</div>
+                       <div class="item_text"> Сформировать эмоциональную привязанность с ребенком
+                        </div><div  class="item_checkbox"></div>
+                        
+                    </div>
+
+                    <div class="content_item">
+                            <div class="item_nubmer">2</div>
+                            <div class="item_text">Объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье
+                                </div>
+                                <div  class="item_checkbox"></div>
+                    </div>
+
+                    <div class="content_item">
+                            <div class="item_nubmer">3</div>
+                            <div class="item_text">Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье. Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье.Сформировать эмоциональную привязанность с ребенком
+                            </div>
+                            <div  class="item_checkbox"></div>
+                    </div>
+
+                    <div class="content_item">
+                            <div class="item_nubmer">4</div>    
+                            <div class="item_text">Объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье
+                            </div>
+                            <div  class="item_checkbox"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="screen4">
+                <div class="container">
+                    
+                    
+                        <button class="tasks_header" id="click" onclick="openDiv()">
+                            <div class="tasks_header_row1"></div>
+                                Проработать
+                                <div class="tasks_header_row2"></div>
+                                <div class="triangle"></div>
+                        </button>
+                   
+                        
+
+
+                <div id="screen4_content" style="display:none;">
+                        <div class="card">
+                            <div class="card_nubmer">1</div>
+                            <img class="leftimage" src="./img/3cube.png" alt="">
+                            <div class="card_content">
+                                <div class="content_firstrow">
+                                    <img src="./img/glasses.png" alt="glasses">
+                                    Статья
+                                    <img src="./img/clocks.png" alt="clock">
+                                    1 час 15 минут
+                                </div>
+                                <h2>Формирование эмоциональной связи с родителями</h2>
+                                <div class="content_lastrow">
+                                    <img src="./img/eye.png" alt="eye">
+                                    Просмотреть
+                                    <img src="./img/notify.png" alt="">
+                                    Напомнить
+                                </div>
+                            </div>
+                            <div class="card_switcher">
+                                    <input type="checkbox" id="cbx" style="display:none"/>
+                                    <label for="cbx" class="toggle"><span></span></label>  
+                            </div>
+                        </div>
+                        <div class="card">
+                                <div class="card_nubmer">1</div>
+                                <img class="leftimage" src="./img/3cube.png" alt="">
+                                <div class="card_content">
+                                    <div class="content_firstrow">
+                                        <img src="./img/glasses.png" alt="glasses">
+                                        Статья
+                                        <img src="./img/clocks.png" alt="clock">
+                                        1 час 15 минут
+                                    </div>
+                                    <h2>Формирование эмоциональной связи с родителями</h2>
+                                    <div class="content_lastrow">
+                                        <img src="./img/eye.png" alt="eye">
+                                        Просмотреть
+                                        <img src="./img/notify.png" alt="">
+                                        Напомнить
+                                    </div>
+                                </div>
+                                <div class="card_switcher">
+                                        <input type="checkbox" id="cbx" style="display:none"/>
+                                        <label for="cbx" class="toggle"><span></span></label>  
+                                </div>
+                            </div>
+                            <div class="card">
+                                    <div class="card_nubmer">1</div>
+                                    <img class="leftimage" src="./img/3cube.png" alt="">
+                                    <div class="card_content">
+                                        <div class="content_firstrow">
+                                            <img src="./img/glasses.png" alt="glasses">
+                                            Статья
+                                            <img src="./img/clocks.png" alt="clock">
+                                            1 час 15 минут
+                                        </div>
+                                        <h2>Формирование эмоциональной связи с родителями</h2>
+                                        <div class="content_lastrow">
+                                            <img src="./img/eye.png" alt="eye">
+                                            Просмотреть
+                                            <img src="./img/notify.png" alt="">
+                                            Напомнить
+                                        </div>
+                                    </div>
+                                    <div class="card_switcher">
+                                            <input type="checkbox" id="cbx" style="display:none"/>
+                                            <label for="cbx" class="toggle"><span></span></label>  
+                                    </div>
+                                </div>
+                                <div class="card">
+                                        <div class="card_nubmer">1</div>
+                                        <img class="leftimage" src="./img/3cube.png" alt="">
+                                        <div class="card_content">
+                                            <div class="content_firstrow">
+                                                <img src="./img/glasses.png" alt="glasses">
+                                                Статья
+                                                <img src="./img/clocks.png" alt="clock">
+                                                1 час 15 минут
+                                            </div>
+                                            <h2>Формирование эмоциональной связи с родителями</h2>
+                                            <div class="content_lastrow">
+                                                <img src="./img/eye.png" alt="eye">
+                                                Просмотреть
+                                                <img src="./img/notify.png" alt="">
+                                                Напомнить
+                                            </div>
+                                        </div>
+                                        <div class="card_switcher">
+                                                <input type="checkbox" id="cbx" style="display:none"/>
+                                                <label for="cbx" class="toggle"><span></span></label>  
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                            <div class="card_nubmer">1</div>
+                                            <img class="leftimage" src="./img/3cube.png" alt="">
+                                            <div class="card_content">
+                                                <div class="content_firstrow">
+                                                    <img src="./img/glasses.png" alt="glasses">
+                                                    Статья
+                                                    <img src="./img/clocks.png" alt="clock">
+                                                    1 час 15 минут
+                                                </div>
+                                                <h2>Формирование эмоциональной связи с родителями</h2>
+                                                <div class="content_lastrow">
+                                                    <img src="./img/eye.png" alt="eye">
+                                                    Просмотреть
+                                                    <img src="./img/notify.png" alt="">
+                                                    Напомнить
+                                                </div>
+                                            </div>
+                                            <div class="card_switcher">
+                                                    <input type="checkbox" id="cbx" style="display:none"/>
+                                                    <label for="cbx" class="toggle"><span></span></label>  
+                                            </div>
+                                        </div>
+
+
+
+
+
+                </div>
+            </div>
+        </div>    
+
+
+        
+
+        <div class="screen5">
+                <div class="container">
+                        <button class="tasks_header" id="click" onclick="openDiv2()">
+                            <div class="tasks_header_row1"></div>
+                            Дополнительные задания
+                                <div class="tasks_header_row2"></div>
+                                <div class="triangle"></div>
+                        </button>
+                   
+                        
+
+
+                <div id="screen5_content" style="display:none;">
+                        <div class="card">
+                            <div class="card_nubmer">1</div>
+                            <img class="leftimage" src="./img/3cube.png" alt="">
+                            <div class="card_content">
+                                <div class="content_firstrow">
+                                    <img src="./img/glasses.png" alt="glasses">
+                                    Статья
+                                    <img src="./img/clocks.png" alt="clock">
+                                    1 час 15 минут
+                                </div>
+                                <h2>Формирование эмоциональной связи с родителями</h2>
+                                <div class="content_lastrow">
+                                    <img src="./img/eye.png" alt="eye">
+                                    Просмотреть
+                                    <img src="./img/notify.png" alt="">
+                                    Напомнить
+                                </div>
+                            </div>
+                            <div class="card_switcher">
+                                    <input type="checkbox" id="cbx" style="display:none"/>
+                                    <label for="cbx" class="toggle"><span></span></label>  
+                            </div>
+                        </div>
+                        <div class="card">
+                                <div class="card_nubmer">1</div>
+                                <img class="leftimage" src="./img/3cube.png" alt="">
+                                <div class="card_content">
+                                    <div class="content_firstrow">
+                                        <img src="./img/glasses.png" alt="glasses">
+                                        Статья
+                                        <img src="./img/clocks.png" alt="clock">
+                                        1 час 15 минут
+                                    </div>
+                                    <h2>Формирование эмоциональной связи с родителями</h2>
+                                    <div class="content_lastrow">
+                                        <img src="./img/eye.png" alt="eye">
+                                        Просмотреть
+                                        <img src="./img/notify.png" alt="">
+                                        Напомнить
+                                    </div>
+                                </div>
+                                <div class="card_switcher">
+                                        <input type="checkbox" id="cbx" style="display:none"/>
+                                        <label for="cbx" class="toggle"><span></span></label>  
+                                </div>
+                            </div>
+                            <div class="card">
+                                    <div class="card_nubmer">1</div>
+                                    <img class="leftimage" src="./img/3cube.png" alt="">
+                                    <div class="card_content">
+                                        <div class="content_firstrow">
+                                            <img src="./img/glasses.png" alt="glasses">
+                                            Статья
+                                            <img src="./img/clocks.png" alt="clock">
+                                            1 час 15 минут
+                                        </div>
+                                        <h2>Формирование эмоциональной связи с родителями</h2>
+                                        <div class="content_lastrow">
+                                            <img src="./img/eye.png" alt="eye">
+                                            Просмотреть
+                                            <img src="./img/notify.png" alt="">
+                                            Напомнить
+                                        </div>
+                                    </div>
+                                    <div class="card_switcher">
+                                            <input type="checkbox" id="cbx" style="display:none"/>
+                                            <label for="cbx" class="toggle"><span></span></label>  
+                                    </div>
+                                </div>
+                </div>
+            </div>
+        </div>    
+
+
+        <div class="screen6">
+                <div class="container">
+                    <button class="tasks_header" id="click" onclick="openDiv3()">
+                        <div class="tasks_header_row1"></div>
+                        Что проверить?
+                        <div class="tasks_header_row2"></div>
+                        <div class="triangle"></div>
+                    </button>
+
+
+
+
+                <div id="screen6_content" style="display:none;">
+                    
+                    <h2>Крупная моторика</h2>
+                    <div class="card">
+                       <div class="card_text"> Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
+                        </div>
+                        <label>
+                            <input type ="screen6_checkbox">
+                            <div class="newcheckbox"></div>
+                        </label>
+                    </div>
+                    <div class="card">
+                            <div class="card_text"> Тело находится приемущественно в согнутом положении (конец 1 мес)
+                      </div>
+                        <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                    </div>
+
+                    <h2>Координация движений</h2>
+                    <div class="card">
+                            <div class="card_text"> Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
+                      </div>
+                                <label>
+                            <input type ="screen6_checkbox">
+                            <div class="newcheckbox"></div>
+                        </label>
+                    </div>
+                    <div class="card">
+                            <div class="card_text">   Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье. Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье.Сформировать эмоциональную привязанность с ребенком
+                       </div>
+                        <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                    </div>
+
+                    <h2>Коммуникация</h2>
+                    <div class="card">
+                            <div class="card_text">   Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
+                      </div>
+                                <label>
+                            <input type ="screen6_checkbox">
+                            <div class="newcheckbox"></div>
+                        </label>
+                    </div>
+                    <div class="card">
+                            <div class="card_text">   Тело находится приемущественно в согнутом положении (конец 1 мес)
+                            </div><button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                    </div>
+
+                    <div class="orangecard">
+                            <div class="card_text">    <b>!</b>Тревожные признаки о отклонения от нормы развития
+                    </div>
+                            </div>
+                    
+                    <h2>Коммуникация</h2>
+                    <div class="card">
+                            <div class="card_text">          Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
+                        </div>   
+                     <label>
+                            <input type ="screen6_checkbox">
+                            <div class="newcheckbox"></div>
+                        </label>
+                    </div>
+                    <div class="card">
+                            <div class="card_text">      Координация движений
+                      </div>  <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                    </div>
+                </div>
+
+      
+</body>
+</html>
