@@ -19,6 +19,30 @@ body {
   font-family: 'ProximaNova-Bold';
 }
 
+body .dropdown_menu {
+  cursor: pointer;
+  display: none;
+}
+
+body .dropdown_menu .dropdown_menu_item {
+  width: 35px;
+  height: 2px;
+  background-color: #222B3A;
+  margin-bottom: 6px;
+}
+
+body a {
+  text-decoration: none;
+  color: #222B3A;
+  margin-right: 68px;
+}
+
+body .container {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
 body header {
   height: 72px;
   display: -webkit-box;
@@ -42,6 +66,14 @@ body header .header_right_item {
   display: flex;
 }
 
+body header .header_right_item a:nth-child(1) {
+  border-bottom: 5px solid #F78000;
+}
+
+body header .header_right_item a:hover {
+  border-bottom: 5px solid #F78000;
+}
+
 body header .header_right_item .header_text {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -52,33 +84,48 @@ body header .header_right_item .header_text {
       -ms-flex-align: center;
           align-items: center;
   height: 72px;
-  margin-right: 68px;
 }
 
 body header .header_right_item .header_text img {
   margin-right: 6px;
 }
 
-body header .header_text:nth-child(1) {
-  border-bottom: 2px solid #F78000;
-}
-
-body .container {
-  width: 1100px;
-  height: 100%;
-  margin: 0 auto;
-}
-
 body .screen1 {
   height: 513px;
   background-color: #296DCE;
+  overflow: hidden;
+  position: relative;
+}
+
+body .screen1::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1000px;
+  width: 1509px;
+  height: 310px;
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-transform: rotate(10deg) translateX(-500px) translateY(200px);
+          transform: rotate(10deg) translateX(-500px) translateY(200px);
+}
+
+body .screen1::after {
+  overflow: hidden;
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 2250.13px;
+  height: 462.1px;
+  background: rgba(255, 255, 255, 0.07);
+  -webkit-transform: rotate(-19.96deg) translateX(-1500px) translateY(-450px);
+          transform: rotate(-19.96deg) translateX(-1500px) translateY(-450px);
 }
 
 body .screen1 .screen1_content {
   width: 622px;
 }
 
-body .screen1 .screen1_content:after {
+body .screen1 .screen1_content::after {
   content: "";
   display: block;
   position: relative;
@@ -177,31 +224,6 @@ body .screen1 .screen1_themes_counter .themes_total_info .total_info_text {
 body .screen1 .screen1_themes_counter .themes_total_info .total_info_text {
   margin-left: 10px;
   margin-right: 150px;
-}
-
-body .screen1:before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: 0;
-  left: 0;
-  width: 1509.5px;
-  height: 310px;
-  background: rgba(255, 255, 255, 0.07);
-  -webkit-transform: rotate(10deg) translateY(-200px) translateX(100px);
-          transform: rotate(10deg) translateY(-200px) translateX(100px);
-}
-
-body .screen1:after {
-  content: "";
-  position: relative;
-  display: block;
-  left: 0;
-  width: 2250.13px;
-  height: 462.1px;
-  background: rgba(255, 255, 255, 0.07);
-  -webkit-transform: rotate(-19.96deg) translateX(-1500px) translatey(-450px);
-          transform: rotate(-19.96deg) translateX(-1500px) translatey(-450px);
 }
 
 body .screen2 {
@@ -303,7 +325,8 @@ body .screen4 .container {
 }
 
 body .screen4 .container .screen4_item {
-  width: 1100px;
+  position: relative;
+  margin: 0 auto;
   border: 1px solid #F3F3F3;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -326,10 +349,6 @@ body .screen4 .container .screen4_item .item_nubmer {
   font-size: 64px;
 }
 
-body .screen4 .container .screen4_item .item_content {
-  width: 800px;
-}
-
 body .screen4 .container .screen4_item .item_content h1 {
   font-size: 24px;
   color: #1092CB;
@@ -337,7 +356,6 @@ body .screen4 .container .screen4_item .item_content h1 {
 }
 
 body .screen4 .container .screen4_item .item_content p {
-  width: 800px;
   font-family: 'ProximaNova';
 }
 
@@ -346,7 +364,6 @@ body .screen4 .container .screen4_item .item_content .item_age_category {
 }
 
 body .screen4 .container .screen4_item .item_content .item_date {
-  width: 1000px;
   height: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -413,7 +430,6 @@ body footer {
   font-family: 'ProximaNova';
   margin-top: 75px;
   color: white;
-  height: 350px;
   background-color: #0099DD;
 }
 
@@ -462,5 +478,79 @@ body footer .container .footer_section ul a {
 body .endpage {
   background: #222B3A;
   height: 47px;
+}
+
+@media screen and (max-width: 1150px) {
+  .container {
+    width: 90%;
+  }
+  .screen1 {
+    margin: 0 auto;
+  }
+  .screen4_item {
+    width: 90%;
+  }
+  .screen1:before, .screen1:after {
+    display: none;
+  }
+  body .screen1 .screen1_content::after {
+    display: none;
+  }
+  .footer_section:nth-child(1), .footer_section:nth-child(2), .footer_section:nth-child(3) {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  body .container nav {
+    display: none;
+  }
+  body .container header .dropdown_menu {
+    display: block;
+  }
+  body .container .dropdown_menu:hover nav {
+    background-color: rgba(156, 197, 255, 0.5);
+    padding: 10px;
+    border-radius: 10px;
+    position: relative;
+    z-index: 5;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    margin-top: 300px;
+  }
+  body .container .dropdown_menu:hover nav a:nth-child(1) {
+    border-bottom: 5px solid #F78000;
+  }
+  body .container .dropdown_menu:hover nav a:hover {
+    border-bottom: 5px solid #F78000;
+  }
+  body .container .dropdown_menu:hover nav .header_text {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 72px;
+  }
+  body .container .dropdown_menu:hover nav .header_text img {
+    margin-right: 6px;
+  }
+  body .container header .header_right_item {
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */

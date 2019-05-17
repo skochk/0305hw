@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- <link rel="stylesheet" href="styles/style.css"> -->
+    <title>karpachoff</title>
+
     <script src="./scripts/first_script.js"></script>
     <link rel="stylesheet" href="styles/module.css">
 </head>
@@ -13,13 +13,13 @@
     <div class="container">
         <header>
             <div class="header_left_item">
-                <a href="#"> <img src="img/logo.svg">  </a>
+                <a href="index.html"> <img src="img/logo.svg">  </a>
             </div>
             <div class="header_right_item">
-                <div class="header_text">Главная</div>
-                <div class="header_text">Материалы для вас</div>
-                <div class="header_text">Календарь курсов</div>
-                <div class="header_text"><img src="img/usericon.svg">Войти</div>
+                <a href="index.html"><div class="header_text">Главная</div></a>
+                <a href="#"><div class="header_text">Материалы для вас</div></a>
+                <a href="#"><div class="header_text">Календарь курсов</div></a>
+                <a href="#"> <div class="header_text"><img src="img/usericon.svg">Войти</div></a>
             </div>
         </header>
     </div>
@@ -45,6 +45,8 @@
                 </div>
             </div>
         </div>
+
+
             <div class="screen2">
                 <div class="container">
                         <div class="screen2_text">Главная</div>
@@ -55,22 +57,21 @@
                 </div>
             </div>
 
+
+
+
         <div class="screen3">
             <div class="container">
-                <label class="link" for="hider" id="clickme">
-                    <div class="module_tasks">
-                        <div class="tasks_header">
+                <button class="tasks_header" id="click" onclick="openDiv0()">
+                         
                             <div class="tasks_header_row1"></div>
-                            Задачи модуля
+                            <div class="tasts_header_text"> Задачи модуля</div>
                             <div class="tasks_header_row2"></div>
                             <div class="triangle"></div>
-                        </div>
-                    </div>
-                </label>
+                        
+                </button>
 
-                <input type="checkbox" id="hider">
-
-                <div class="screen3_content">
+                <div id="screen3_content" style="display:none;">
                     <div class="content_item">
                         <div class="item_nubmer">1</div>
                        <div class="item_text"> Сформировать эмоциональную привязанность с ребенком
@@ -104,11 +105,9 @@
 
         <div class="screen4">
                 <div class="container">
-                    
-                    
                         <button class="tasks_header" id="click" onclick="openDiv()">
                             <div class="tasks_header_row1"></div>
-                                Проработать
+                            <div class="tasts_header_text">Проработать</div>
                                 <div class="tasks_header_row2"></div>
                                 <div class="triangle"></div>
                         </button>
@@ -136,36 +135,38 @@
                                 </div>
                             </div>
                             <div class="card_switcher">
-                                    <input type="checkbox" id="cbx" style="display:none"/>
-                                    <label for="cbx" class="toggle"><span></span></label>  
+                                    <input type="checkbox" id="cbx1" style="display:none"/>
+                                    <label for="cbx1" class="toggle"><span></span></label>  
                             </div>
                         </div>
                         <div class="card">
-                                <div class="card_nubmer">1</div>
-                                <img class="leftimage" src="./img/3cube.png" alt="">
-                                <div class="card_content">
-                                    <div class="content_firstrow">
-                                        <img src="./img/glasses.png" alt="glasses">
-                                        Статья
-                                        <img src="./img/clocks.png" alt="clock">
-                                        1 час 15 минут
-                                    </div>
-                                    <h2>Формирование эмоциональной связи с родителями</h2>
-                                    <div class="content_lastrow">
-                                        <img src="./img/eye.png" alt="eye">
-                                        Просмотреть
-                                        <img src="./img/notify.png" alt="">
-                                        Напомнить
-                                    </div>
+                            <div class="card_nubmer">2</div>
+                            <img class="leftimage" src="./img/sun.svg" alt="">
+                            <div class="card_content">
+                                <div class="content_firstrow">
+                                    <p>Практика</p>
+                                    <img src="./img/test.svg" alt="glasses">
+                                    Тест
+                                    <img src="./img/clocks.png" alt="clock">
+                                    30 минут
                                 </div>
-                                <div class="card_switcher">
-                                        <input type="checkbox" id="cbx" style="display:none"/>
-                                        <label for="cbx" class="toggle"><span></span></label>  
+                                <h2>Объяснить отцу и\или другим членами семьи, проживают 
+                                        с вами о предстоящем этапе в вашей семье</h2>
+                                <div class="content_lastrow">
+                                    <img src="./img/eye.png" alt="eye">
+                                    Просмотреть
+                                    <img src="./img/notify.png" alt="">
+                                    Напомнить
                                 </div>
                             </div>
+                            <div class="card_switcher">
+                                <input type="checkbox" id="cbx2" style="display:none"/>
+                                <label for="cbx2" class="toggle"><span></span></label>  
+                            </div>
+                        </div>
                             <div class="card">
-                                    <div class="card_nubmer">1</div>
-                                    <img class="leftimage" src="./img/3cube.png" alt="">
+                                    <div class="card_nubmer">3</div>
+                                    <img class="leftimage" src="./img/thinking.svg  " alt="">
                                     <div class="card_content">
                                         <div class="content_firstrow">
                                             <img src="./img/glasses.png" alt="glasses">
@@ -182,13 +183,13 @@
                                         </div>
                                     </div>
                                     <div class="card_switcher">
-                                            <input type="checkbox" id="cbx" style="display:none"/>
-                                            <label for="cbx" class="toggle"><span></span></label>  
+                                            <input type="checkbox" id="cbx3" style="display:none"/>
+                                            <label for="cbx3" class="toggle"><span></span></label>  
                                     </div>
                                 </div>
                                 <div class="card">
-                                        <div class="card_nubmer">1</div>
-                                        <img class="leftimage" src="./img/3cube.png" alt="">
+                                        <div class="card_nubmer">4</div>
+                                        <img class="leftimage" src="./img/thinking.svg" alt="">
                                         <div class="card_content">
                                             <div class="content_firstrow">
                                                 <img src="./img/glasses.png" alt="glasses">
@@ -205,13 +206,13 @@
                                             </div>
                                         </div>
                                         <div class="card_switcher">
-                                                <input type="checkbox" id="cbx" style="display:none"/>
-                                                <label for="cbx" class="toggle"><span></span></label>  
+                                                <input type="checkbox" id="cbx4" style="display:none"/>
+                                                <label for="cbx4" class="toggle"><span></span></label>  
                                         </div>
                                     </div>
                                     <div class="card">
-                                            <div class="card_nubmer">1</div>
-                                            <img class="leftimage" src="./img/3cube.png" alt="">
+                                            <div class="card_nubmer">5</div>
+                                            <img class="leftimage" src="./img/sun.svg" alt="">
                                             <div class="card_content">
                                                 <div class="content_firstrow">
                                                     <img src="./img/glasses.png" alt="glasses">
@@ -219,7 +220,8 @@
                                                     <img src="./img/clocks.png" alt="clock">
                                                     1 час 15 минут
                                                 </div>
-                                                <h2>Формирование эмоциональной связи с родителями</h2>
+                                                <h2>Объяснить отцу и\или другим членами семьи, проживают 
+                                                        с вами о предстоящем этапе в вашей семье</h2>
                                                 <div class="content_lastrow">
                                                     <img src="./img/eye.png" alt="eye">
                                                     Просмотреть
@@ -228,8 +230,8 @@
                                                 </div>
                                             </div>
                                             <div class="card_switcher">
-                                                    <input type="checkbox" id="cbx" style="display:none"/>
-                                                    <label for="cbx" class="toggle"><span></span></label>  
+                                                    <input type="checkbox" id="cbx5" style="display:none"/>
+                                                    <label for="cbx5" class="toggle"><span></span></label>  
                                             </div>
                                         </div>
 
@@ -248,9 +250,9 @@
                 <div class="container">
                         <button class="tasks_header" id="click" onclick="openDiv2()">
                             <div class="tasks_header_row1"></div>
-                            Дополнительные задания
-                                <div class="tasks_header_row2"></div>
-                                <div class="triangle"></div>
+                            <div class="tasts_header_text">Дополнительные задания</div>
+                            <div class="tasks_header_row2"></div>
+                            <div class="triangle"></div>
                         </button>
                    
                         
@@ -264,7 +266,7 @@
                                 <div class="content_firstrow">
                                     <img src="./img/glasses.png" alt="glasses">
                                     Статья
-                                    <img src="./img/clocks.png" alt="clock">
+                                    <img src="./img/clocks.png" alt=    "clock">
                                     1 час 15 минут
                                 </div>
                                 <h2>Формирование эмоциональной связи с родителями</h2>
@@ -331,15 +333,16 @@
         </div>    
 
 
+
+        
         <div class="screen6">
                 <div class="container">
                     <button class="tasks_header" id="click" onclick="openDiv3()">
                         <div class="tasks_header_row1"></div>
-                        Что проверить?
+                        <div class="tasts_header_text">Что проверить?</div>
                         <div class="tasks_header_row2"></div>
                         <div class="triangle"></div>
                     </button>
-
 
 
 
@@ -349,66 +352,322 @@
                     <div class="card">
                        <div class="card_text"> Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
                         </div>
-                        <label>
-                            <input type ="screen6_checkbox">
-                            <div class="newcheckbox"></div>
-                        </label>
+
+                        <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
+                      
                     </div>
                     <div class="card">
                             <div class="card_text"> Тело находится приемущественно в согнутом положении (конец 1 мес)
                       </div>
-                        <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                      <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
                     </div>
 
                     <h2>Координация движений</h2>
                     <div class="card">
                             <div class="card_text"> Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
                       </div>
-                                <label>
-                            <input type ="screen6_checkbox">
-                            <div class="newcheckbox"></div>
-                        </label>
+                      <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
+                          
                     </div>
                     <div class="card">
                             <div class="card_text">   Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье. Сформировать эмоциональную привязанность с ребенком, объяснить отцу и\или другим членами семьи, которые проживают с вами о предстоящем этапе в вашей семье.Сформировать эмоциональную привязанность с ребенком
                        </div>
-                        <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                       <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
                     </div>
 
                     <h2>Коммуникация</h2>
                     <div class="card">
                             <div class="card_text">   Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
                       </div>
-                                <label>
-                            <input type ="screen6_checkbox">
-                            <div class="newcheckbox"></div>
-                        </label>
+
+    
+                      <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
                     </div>
                     <div class="card">
                             <div class="card_text">   Тело находится приемущественно в согнутом положении (конец 1 мес)
-                            </div><button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                            </div>
+                      
+                            <label class="fu_checkbox">
+                                    <input type="checkbox">
+                                    <div></div>
+                                  </label>
+                    </div>
+                  
+                    <div class="orangecard">
+                            <div class="card_text">   
+                                <img src="./img/alert_symbol.png" alt=""> 
+                                Тревожные признаки о отклонения от нормы развития
+                            </div>
                     </div>
 
-                    <div class="orangecard">
-                            <div class="card_text">    <b>!</b>Тревожные признаки о отклонения от нормы развития
-                    </div>
-                            </div>
-                    
                     <h2>Коммуникация</h2>
                     <div class="card">
                             <div class="card_text">          Поднимает голову, чтобы взглянуть на окружающие предметы (конец 1 мес)
-                        </div>   
-                     <label>
-                            <input type ="screen6_checkbox">
-                            <div class="newcheckbox"></div>
-                        </label>
+                        </div>  
+                        
+                        
+                        <label class="fu_checkbox">
+                                <input type="checkbox">
+                                <div></div>
+                              </label>
                     </div>
+
+
+                  
                     <div class="card">
-                            <div class="card_text">      Координация движений
-                      </div>  <button class="newcheckbox" id="real_checkbox2" onclick="real_checkbox1(this.id)"></button>
+                        <div class="card_text">      Координация движений                   </div> 
+
+                      <label class="fu_checkbox">
+                            <input type="checkbox">
+                            <div></div>
+                          </label>
                     </div>
                 </div>
+                </div>
+        </div>
 
-      
+    
+                
+        <div class="screen7">
+            <div class="container">
+                <button class="tasks_header" id="click" onclick="openDiv4()">
+                    <div class="tasks_header_row1"></div>
+                    <div class="tasts_header_text">Обратить внимание</div>
+                    <div class="tasks_header_row2"></div>
+                    <div class="triangle"></div>
+                </button>
+
+
+            <div id="screen7_content" style="display:none;">
+                
+                <button class="card_opener" id="click" onclick="card_open1()">
+                    <div class="card">
+                        <div class="card_left_group">
+                            <img src="./img/swimmer.svg">
+                            Плавание
+                        </div>
+                        <img src="./img/screen7_triangle.png">
+                    </div>
+                </button>   
+
+                <div id="card_content1" style="display:none;">
+                    mmm content
+                </div>
+
+                
+                <button class="card_opener" id="click" onclick="card_open2()">
+                        <div class="card">
+                            <div class="card_left_group">
+                                <img src="./img/swimmer.svg">
+                                Плавание
+                            </div>
+                            <img src="./img/screen7_triangle.png">
+                        </div>
+                    </button>   
+    
+                    <div id="card_content2" style="display:none;">
+                        mmm content
+                    </div>
+                
+
+                <button class="card_opener" id="click" onclick="card_open3()">
+                        <div class="card">
+                             <div class="card_left_group">
+                               <img src="./img/swimmer.svg">
+                                Плавание
+                            </div>
+                            <img src="./img/screen7_triangle.png" id="img_rotate">
+                        </div>  
+                </button>   
+        
+                    <div id="card_content3" style="display:none;" class="card">
+                        <div class="card_content3_text">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris diam, fringilla eu placerat vitae, condimentum sed dolor. Pellentesque faucibus ultricies metus et rutrum. Aliquam erat dolor, ultricies at tristique at, condimentum non metus. Cras condimentum lectus risus, at sollicitudin lacus luctus ac. Proin cursus, sapien at porta molestie, dolor massa placerat felis, sed molestie mauris magna at metus. Nunc vitae purus enim. In dignissim est eget lacinia pulvinar. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam ipsum nisl, tempus eget consectetur quis, bibendum ornare massa. Integer eget eleifend orci. Duis nec metus pellentesque, volutpat neque at, sodales mi. Duis pretium luctus feugiat. Fusce dictum eget quam sed congue.
+                            Vivamus a nulla laoreet dolor tempus sodales. Praesent sit amet ante ut erat mollis placerat. Fusce laoreet orci dictum, accumsan est id, rutrum nunc. Integer vel neque porta, vehicula turpis sit amet, sodales ipsum. Sed ultricies luctus tortor vel sodales. Fusce blandit nibh eu arcu facilisis bibendum. Aliquam ut pulvinar lectus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non condimentum augue. Nullam ligula mi, euismod at velit in, blandit viverra tortor. Integer sagittis, libero sit amet interdum rutrum, eros nisl tempus est, nec commodo lectus mi id nunc. Curabitur fermentum auctor sapien, ut luctus ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non condimentum augue. Nullam ligula mi, euismod at velit in, blandit viverra tortor. Integer sagittis, libero sit amet interdum rutrum, eros nisl tempus est, nec commodo lectus mi id nunc. Curabitur fermentum auctor sapien, ut luctus ante. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur non condimentum augue. Nullam ligula mi, euismod at velit in, blandit viverra tortor. Integer sagittis, libero sit amet interdum rutrum.
+                        </div>
+                    </div>      
+            </div>  
+          </div>
+        </div>      
+
+
+        <div class="screen8">
+                <div class="container">
+
+                    <button class="tasks_header" id="click" onclick="openDiv5()">
+                        <div class="tasks_header_row1"></div>
+                        <div class="tasts_header_text">Частые вопросы</div>
+                        <div class="tasks_header_row2"></div>
+                        <div class="triangle"></div>
+                    </button>
+
+                    <div id="screen8_content" style="display:none;">
+                        <div class="card">
+                            <div class="card_left_items">Вопрос про воспитание ребенка</div>
+                            <div class="card_right_items">
+                                <img src="./img/cloudchat.png" alt="question">
+                                <p>Новый вопрос</p>
+                                <img src="./img/like.svg">
+                                30
+                                <img src="./img/screen7_triangle.png" id="img_rotate">
+                            </div>
+                        </div>
+                        
+                        <div class="card">
+                            <div class="card_left_items">Вопрос про воспитание ребенка</div>
+                                <div class="card_right_items">
+                                    <img src="./img/like.svg">
+                                    25
+                                    <img src="./img/screen7_triangle.png" id="img_rotate">
+                                </div>
+                        </div>
+
+
+
+                        <button class="card_opener" id="click" onclick="card_open4()">
+                            <div class="card">
+                                <div class="card_left_items">Вопрос про воспитание ребенка</div>
+                                    <div class="card_right_items">
+                                        <img src="./img/like.svg">
+                                        25
+                                        <img src="./img/screen7_triangle.png" id="img_rotate2">
+                                    </div>
+                            </div>
+                        </button>
+
+                        <div id="card_content4" style="display:none;" class="card">
+                            <div class="card_content4_content">
+
+                                <div class="first_row">
+                                    <div class="card_left">
+                                        <img src="./img/natasha.png">
+                                        <div class="first_row_text">
+                                            Наталия, Киев
+                                            <p>2 дня назад</p>
+                                        </div>
+                                    </div>
+                                    <div class="card_right">
+                                        <img src="./img/like.svg">
+                                        45
+                                    </div>
+                                </div>
+
+
+                                <div class="card_content">
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris diam, fringilla eu placerat vitae, condimentum sed dolor. Pellentesque faucibus ultricies metus et rutrum. Aliquam erat dolor, ultricies at tristique at, condimentum non metus. Cras condimentum lectus risus, at sollicitudin lacus luctus ac. Proin cursus, sapien at porta molestie, dolor massa placerat felis, sed molestie mauris magna at metus. Nunc vitae purus enim. In dignissim est eget lacinia pulvinar.
+                                    <div class="trainer">
+                                        <div class="trainer_header">
+                                            <div class="header_left">
+                                                <img src="./img/vitalik_face.png">
+                                                <div class="trainer_name">
+                                                    <div class="first_row_text">
+                                                        <img src="./img/star.svg" alt="star">
+                                                        Тренер
+                                                    </div>
+                                                    <p>1 день назад</p>
+                                                </div>
+                                            </div>
+
+                                            <div class="header_right">
+                                                <img src="./img/like.svg" alt="">
+                                                90
+                                            </div>
+                                        </div>  
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas mauris diam, fringilla eu placerat vitae, condimentum sed dolor. Pellentesque faucibus ultricies metus et rutrum. Aliquam erat dolor, ultricies at tristique at, condimentum non metus. Cras condimentum lectus risus, at sollicitudin lacus luctus ac. Proin cursus, sapien at porta molestie, dolor massa placerat felis, sed molestie mauris.
+                                    </div>
+                                </div>
+
+                                <button class="showComments">
+                                        Доступно 3 комментария
+                                        <img src="./img/play.svg" alt="">
+                                </button>
+
+                            </div>
+                        </div>
+                    </div>
+
+                 
+                </div>    
+        </div>
+
+        <div class="container">
+                <button class="ask">
+                        Задать свой вопрос
+                </button>
+
+                <button class="openQuestions">
+                        Посмотреть все вопросы
+                </button>
+        </div>
+
+
+
+        <footer>
+                <div class="container">
+                    <div class="footer_section">
+                        <div class="section_name">Онлайн - школа</div>
+                        <div class="section_dash"></div>
+                        <ul>
+                            <a href="module.html"><ol>О школе</ol></a>
+                            <a href="module.html"> <ol>Об авторе</ol></a>
+                            <a href="module.html"><ol>Вопрос/Ответ</ol></a>
+                            <a href="module.html"><ol>Отзывы</ol></a>
+                        </ul>
+                    </div>        
+                    <div class="footer_section">
+                            <div class="section_name">Материалы</div>
+                            <div class="section_dash"></div>
+                            <ul>
+                                <a href="module.html"><ol>Мои курсы</ol></a>
+                                <a href="module.html"> <ol>Бесплатные курсы</ol></a>
+                                <a href="module.html"><ol>Все о детях</ol></a>
+                                <a href="module.html"><ol>О личности</ol></a>
+                                <a href="module.html"> <ol>О семье</ol></a>
+                                <a href="module.html"><ol>Ближайшие курсы</ol></a>
+                                <a href="module.html"><ol>Новинки</ol></a>
+                            </ul>
+                        </div> 
+                        <div class="footer_section">
+                                <div class="section_name">Информация</div>
+                                <div class="section_dash"></div>
+                                <ul>
+                                    <a href="module.html"><ol>Способы оплаты</ol></a>
+                                    <a href="module.html"> <ol>Политика конфиденциальности</ol></a>
+                                    <a href="module.html"><ol>Договор оферты</ol></a>
+                               
+                                </ul>
+                            </div> 
+                            <div class="footer_section">
+                                    <div class="section_name">Контакты</div>
+                                    <div class="section_dash"></div>
+                                    <ul>
+                                        <a href="module.html"><ol>+38 (044) 35 36 036</ol></a>
+                                        <a href="module.html"> <ol>+7 (495) 504 36 06</ol></a>
+                                        <a href="module.html"><ol>info@karpachoff.com</ol></a>
+                                        <a href="module.html"><ol>school.karpachoff.com</ol></a>
+                                    </ul>
+                                </div> 
+                </div>
+                
+            </footer>
+            <div class="endpage"></div>
+        
+
+
 </body>
 </html>
